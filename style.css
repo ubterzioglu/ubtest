@@ -1,0 +1,175 @@
+:root {
+    --bg-page-color: #ff6600; /* Sayfanın tamamı koyu gri */
+    --bg-container-color: #000000; /* İçerik kutusunun arka planı (tam siyah) */
+    --text-color: #ffffff;
+    --link-bg-color: #1a1a1a;
+    --link-border-color: #444444;
+    --accent-color: #0088ff; /* Mavi vurgu rengi */
+    --cta-color: #ffffff;
+    --cta-bg-color: #1a1a1a;
+    --cta-border: 2px solid #ffffff;
+}
+
+/* ----------------------------------
+ * Global Styles & Dark Mode Setup
+ * ---------------------------------- */
+body {
+    background-color: var(--bg-page-color); 
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* ----------------------------------
+ * Main Container (ÇERÇEVELİ ANA KUTU)
+ * ---------------------------------- */
+.container {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    
+    /* ÇERÇEVELEME STİLLERİ */
+    background-color: var(--bg-container-color); /* İç kısım tam siyah */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Hafif beyaz kenarlık */
+    border-radius: 20px; /* Yuvarlatılmış köşeler */
+    padding: 30px 20px; /* İç padding */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+}
+
+/* ----------------------------------
+ * Header ve Logo Stillleri
+ * ---------------------------------- */
+.header-icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    padding-top: 0;
+}
+
+/* BÜYÜK LOGO RESMİ */
+.main-logo-image {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    margin-bottom: 10px;
+}
+
+.profile-header h1 {
+    font-size: 1.8rem;
+    margin: 0px 0 0px 0;
+    margin-bottom: 5px; 
+    margin-top: 0px; 
+}
+
+.bio p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 5px; 
+    margin-top: 5px; 
+    
+}
+
+/* ----------------------------------
+ * SOSYAL İKONLAR
+ * ---------------------------------- */
+.social-icons-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 15px; 
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+}
+
+.social-icon-img {
+    width: 30px; 
+    height: 30px;
+    border-radius: 8px; 
+    transition: transform 0.2s;
+}
+
+.social-icon-img:hover {
+    transform: scale(1.1);
+}
+
+/* ----------------------------------
+ * KÜÇÜK LOGO RESİMLERİ (Buton içi)
+ * ---------------------------------- */
+.small-logo-image {
+    width: 35px; 
+    height: 35px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+/* ----------------------------------
+ * Link Butonları
+ * ---------------------------------- */
+.link-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--link-bg-color);
+    border: 1px solid var(--link-border-color);
+    border-radius: 15px;
+    padding: 15px 20px;
+    transition: background-color 0.2s;
+    text-align: left;
+}
+
+.link-item:hover {
+    background-color: #ff6600;
+}
+
+.link-text {
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.link-more {
+    font-size: 1.5rem;
+    color: var(--link-border-color);
+}
+
+/* ----------------------------------
+ * Ana CTA Butonu
+ * ---------------------------------- */
+.main-cta-button {
+    display: inline-block;
+    background-color: var(--cta-bg-color);
+    color: var(--cta-color);
+    border: var(--cta-border);
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 80px;
+    transition: background-color 0.2s;
+}
+
+/* ----------------------------------
+ * Telif Hakkı Footer Stili
+ * ---------------------------------- */
+.footer-copyright p {
+    font-size: 0.8rem;
+    color: #888888;
+    margin: 0;
+}
