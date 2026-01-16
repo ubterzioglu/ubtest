@@ -173,3 +173,12 @@ a {
     color: #888888;
     margin: 0;
 }
+
+.footer-copyright a {
+    color: #888888;
+    text-decoration: underline;
+}
+
+.footer-copyright a:hover {
+    color: #ffffff;
+}

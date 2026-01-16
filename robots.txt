@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ubterzioglu.github.io/ubtest/sitemap.xml
+Sitemap: https://ubterzioglu.github.io/ubtest/sitemap.html
+
